@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="bg-[#333333] p-3.5 flex-row justify-center gap-9 ">
+      <div class="bg-[#333333] p-3.5 flex-row justify-center gap-9 w-[100%] ">
         <button class="text-white text-xs">
           About the University
         </button>
@@ -16,7 +16,7 @@
       </div>
     </header>
       
-      <div class="bg-[#D5D5D5] px-9 py-4 flex top-0 sticky flex-row w-screen gap-28">
+      <div class="bg-[#D5D5D5] px-9 py-4 flex top-0 sticky flex-row w-[100%] gap-28">
         <div class=" flex items-center justify-end">
           <img src="../dist/unilogo.svg" width="300" height="100" alt="UPorto logo" alt="">
           </div>
@@ -29,40 +29,79 @@
           </div>
           <div id=" search-container" class="self-end">
             <form action="/search">
-              <input type="search" placeholder="Search" width="100" class="border-b-black w-fit border-black-600 text-black bg-[#D5D5D5]"></input>
+              <input type="search" placeholder="Search" width="50" class="border-b-black w-fit border-black-600 text-black bg-[#D5D5D5]"></input>
             </form>
           </div>
       </div>
-        <div id="image-scroll-container" width="100%" class="overflow-auto flex h-[90vh] relative">
-          <img src="scrollimg1.jpeg" alt="scrlimg1" class="max-h-fit max-w-fit object-contain">
-          <img src="scrollimg2.jpeg" alt="scrlimg2" class="max-h-fit max-w-fit object-contain">
-          <img src="scrollimg3.jpeg" alt="scrlimg3" class="max-h-fit max-w-fit object-contain">
-          <img src="scrollimg4.jpeg" alt="scrlimg4" class="max-h-fit max-w-fit object-contain">
-          <img src="scrollimg5.jpeg" alt="scrlimg5" class="max-h-fit max-w-fit object-contain">
-          <img src="scrollimg6.jpeg" alt="scrlimg6" class="max-h-fit max-w-fit object-contain">
-
-          <p class="absolute left-[10%] top-[60%] flex flex-col absolute items-start bg-gray-600 p-9 text-white bg-opacity-50">
-            Let's grow together
-          </p>
-
+        <div id="image-scroll-container" width="100%" class="flex h-3/5 relative">
+          <img src="scrollimg4.jpeg" alt="scrlimg4" class=" w-[100%] max-h-fit object-contain">
         </div>
-      
-        <section class="px-[30px] flex flex-col container mx-auto w-[90%] py-[6em]">
+        <p class="absolute left-[10%] top-[60%] flex flex-col items-start bg-gray-600 p-14 text-white bg-opacity-50">
+          Let's grow together
+        </p>
+        <section class="px-[30px] p-20 flex flex-col container mx-auto w-[90%]">
           <h2 class="text-[#a18a4d] text-[3.2em] leading-[1.1em] mb-[.65em]">Study</h2>
           <div class="flex items-center w-full mb-[4em] pb-[2.5em] border-b-2 justify-between border-[#f2f2f2]">
               <p class="text-[1.8em] font-[600] leading-[1.1em] mb-[.8em] text-[#333] w-[30%]">Your future is here.</p>
               <p class="leading-[1.4em] font-[300] text-[1.2em] w-[70%]">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market. </p>
           </div>
         </section>
-       </div>
- 
-         
-      <section class="px-[30px] flex flex-col container mx-auto w-[90%] py-[6em]">
-        <h2 class="text-[#a18a4d] text-[3.2em] leading-[1.1em] mb-[.65em] flex-wrap">We are a <br>University of <br>Excellence!</h2>
-        <div class="flex items-center w-full mb-[4em] pb-[2.5em] border-b-2 justify-between border-[#f2f2f2]">
-            <p class="leading-[1.4em] font-[300] text-[1.2em] w-[70%]">With over 100 years of history, the University of Porto is a leading teaching and scientific research institution in Portugal and worldwide.</p>
-            <p class="leading-[1.4em] font-[300] text-[1.2em] w-[70%]">Considered the best Portuguese University and one of the best 100 European institutions according to the most important Higher Education rankings, U.Porto combines quality teaching and excellent research with the best academic experience.</p>
-        </div>
+<!-- Course Section -->
+<section
+class="flex flex-col w-[83%] container mx-auto justify-center pb-[6em] mt-0 py-0"
+>
+<p class="text-black font-semibold text-2xl pb-4">
+  Which course are you looking for?
+</p>
+<div class="flex justify-between w-full">
+  <div class="flex flex-col gap-3 w-[65%]">
+    <select class="border-2 border-black py-[1.2em] px-[1em]">
+      <option value="All">All</option>
+      <option value="All">
+        Bachelor's and Integrated Masters Degree
+      </option>
+      <option value="All">Master's Degree</option>
+      <option value="All">Doctorates</option>
+    </select>
+
+    <input
+      type="text"
+      placeholder="Please enter course keywords..."
+      class="p-4 border-2 border-black"
+    />
+    <p
+      class="p-3 text-center w-full font-semibold text-2xl bg-[#a18a4d] text-white hover:text-[#a18a4d] hover:bg-white transition-all duration-300 border-2 border-[#a18a4d] cursor-pointer"
+    >
+      Search
+    </p>
+  </div>
+  <div class="flex flex-col gap-2 w-[30%] text-[1.5rem] leading-[1.2em]">
+    <p class="font-semibold">Courses from A to Z</p>
+    <p
+      class="underline underline-offset-1 cursor-pointer hover:text-[#a18a4d] font-extralight leading-[1.4em]"
+    >
+      Bachelor's and Integrated Master's
+    </p>
+    <p
+      class="underline underline-offset-1 cursor-pointer hover:text-[#a18a4d] font-extralight leading-[1.4em]"
+    >
+      Master's Degrees
+    </p>
+    <p
+      class="underline underline-offset-1 cursor-pointer hover:text-[#a18a4d] font-extralight leading-[1.4em]"
+    >
+      Doctorates
+    </p>
+  </div>
+</div>
+</section>
+
+<section class="px-[30px] flex flex-col container mx-auto w-[90%] py-28 content-center">
+  <h2 class="text-[#a18a4d] text-[3.2em] leading-[1.1em] mb-[.65em] flex-wrap">We are a <br>University of <br>Excellence!</h2>
+  <div class="flex items-center w-full mb-[4em] pb-[2.5em] border-b-2 justify-between border-[#f2f2f2]">
+      <p class="leading-[1.4em] font-[300] text-[1.2em] w-[70%]">With over 100 years of history, the University of Porto is a leading teaching and scientific research institution in Portugal and worldwide. <br>Considered the best Portuguese University and one of the best 100 European institutions according to the most important Higher Education rankings, U.Porto combines quality teaching and excellent research with the best academic experience.</p>
+  </div>
       </section>
+
   </body>
 </html>
